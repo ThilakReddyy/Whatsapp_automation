@@ -6,7 +6,7 @@ import json
 f = open('phonenumbers.json') #the json file which contains the phone numbers
 data = json.load(f)
 
-driver=webdriver.Chrome('C:/Users/tilak/OneDrive/Desktop/temp/COLLEGE/chromedriver.exe') #loading the chrome driver
+driver=webdriver.Chrome("chromedriver.exe") #loading the chrome driver
 url="https://web.whatsapp.com/"
 driver.get(url) #loading the url
 wait = WebDriverWait(driver, 30)# waiting for the user to scan the code under 30 seconds
